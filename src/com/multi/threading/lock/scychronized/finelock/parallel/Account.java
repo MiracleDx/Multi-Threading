@@ -1,19 +1,19 @@
-package com.multi.threading;
+package com.multi.threading.lock.scychronized.finelock.parallel;
 
 /**
- * Account3
- * 细粒度锁，防止锁定class影响效率（只能串行）,有死锁风险
+ * Account 并行
+ * 细粒度锁，防止锁定class影响效率，有死锁风险
  * @author Dongx
  * Description:
  * Created in: 2019-11-04 21:15
  * Modified by:
  */
-public class Account3 {
+public class Account {
 	
 	private int balance;
 	
 	// 转账
-	void transfer(Account3 target, int amt) {
+	void transfer(Account target, int amt) {
 		// 锁定转出账户
 		synchronized (this) {
 			// 锁定转入账户

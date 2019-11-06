@@ -1,19 +1,19 @@
-package com.multi.threading;
+package com.multi.threading.lock.scychronized.classlock;
 
 /**
- * Account2
+ * Account
  * 用class保护资源
  * @author Dongx
  * Description:
  * Created in: 2019-11-04 21:15
  * Modified by:
  */
-public class Account2 {
+public class Account {
 	
 	private int balance;
 	
 	// 转账
-	void transfer(Account2 target, int amt) {
+	void transfer(Account target, int amt) {
 		// 此处检查所有对象共享的锁
 		synchronized (Account.class)  {
 			if (this.balance > amt) {

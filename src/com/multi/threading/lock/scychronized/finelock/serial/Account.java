@@ -1,7 +1,7 @@
-package com.multi.threading;
+package com.multi.threading.lock.scychronized.finelock.serial;
 
 /**
- * Account
+ * Account 串行
  * 细粒度锁，用不同的锁对受保护资源进行精细化管理，提升性能
  * @author Dongx
  * Description:
