@@ -1,4 +1,4 @@
-package com.multi.threading.lock.scychronized.waitnotify;
+package com.multi.threading.scychronized.waitnotify;
 
 /**
  * Account

@@ -1,4 +1,4 @@
-package com.multi.threading.lock.scychronized.avoiddeadlock.sortresource;
+package com.multi.threading.scychronized.avoiddeadlock.sortresource;
 
 /**
  * Account 避免死锁

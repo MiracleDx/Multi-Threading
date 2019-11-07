@@ -1,4 +1,4 @@
-package com.multi.threading.lock;
+package com.multi.threading;
 
 /**
  * Test

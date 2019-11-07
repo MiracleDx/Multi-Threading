@@ -1,4 +1,4 @@
-package com.multi.threading.lock.scychronized.finelock.serial;
+package com.multi.threading.scychronized.finelock.serial;
 
 /**
  * Account 串行

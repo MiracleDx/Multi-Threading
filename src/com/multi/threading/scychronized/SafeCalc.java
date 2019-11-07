@@ -1,4 +1,4 @@
-package com.multi.threading.lock.scychronized;
+package com.multi.threading.scychronized;
 
 /**
  * SafeCalc

@@ -1,4 +1,4 @@
-package com.multi.threading.lock.scychronized.finelock.parallel;
+package com.multi.threading.scychronized.finelock.parallel;
 
 /**
  * Account 并行

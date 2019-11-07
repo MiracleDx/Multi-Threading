@@ -1,4 +1,4 @@
-package com.multi.threading.lock.scychronized.avoiddeadlock.onetimeresource;
+package com.multi.threading.scychronized.avoiddeadlock.onetimeresource;
 
 /**
  * Account 避免死锁

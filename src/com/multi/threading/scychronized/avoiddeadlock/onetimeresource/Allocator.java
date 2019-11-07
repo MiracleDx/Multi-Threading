@@ -1,4 +1,4 @@
-package com.multi.threading.lock.scychronized.avoiddeadlock.sortresource;
+package com.multi.threading.scychronized.avoiddeadlock.onetimeresource;
 
 import java.util.ArrayList;
 import java.util.List;

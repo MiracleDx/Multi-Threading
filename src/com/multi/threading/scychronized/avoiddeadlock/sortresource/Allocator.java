@@ -1,4 +1,4 @@
-package com.multi.threading.lock.scychronized.waitnotify;
+package com.multi.threading.scychronized.avoiddeadlock.sortresource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,18 +37,12 @@ public class Allocator {
 
 	// 一次性申请所有资源
 	synchronized boolean apply(Object from, Object to) {
-		// 经典写法
-		while (als.contains(from) || als.contains(to)) {
-			try {
-				// 这里等价this.wait
-				wait();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+		if (als.contains(from) || als.contains(to)) {
+			return false;
+		} else {
+			als.add(from);
+			als.add(to);
 		}
-		
-		als.add(from);
-		als.add(to);
 		return true;
 	}
 
@@ -56,7 +50,6 @@ public class Allocator {
 	synchronized void free(Object from, Object to) {
 		als.remove(from);
 		als.remove(to);
-		notifyAll();
 	}
 
 	// 静态内部类，实现单例
