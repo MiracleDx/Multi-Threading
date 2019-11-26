@@ -27,7 +27,7 @@ public class EchoServer {
 				// 每个请求都创建一个线程
 				new Thread(() -> {
 					// 读socket
-					ByteBuffer rb = ByteBuffer.allocate(1024);
+					ByteBuffer rb = ByteBuffer.allocateDirect(1024);
 					try {
 						sc.read(rb);
 						// 模拟处理请求
